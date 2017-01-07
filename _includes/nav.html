@@ -1,6 +1,20 @@
 <nav>
-    <ul>
-        <li><a href="{{site.baseurl}}/index.html">BLOG</a></li>
-        <li><a href="{{site.baseurl}}/categories.html">CATEGORIES</a></li>
+    <ul class="nav {{include.navclass}}">
+        <li><a  href="{{site.baseurl}}/index.html" 
+                {% if page.url == '/' %} class="current" {% endif %}
+                >  ABOUT 
+        </a></li>
+        <li><a  href="{{site.baseurl}}/blog.html" 
+                {% if page.url == '/blog.html' %} class="current" {% endif %}
+                >  BLOG  
+        </a></li>
+        <li><a  href="{{site.baseurl}}/categories.html" 
+                {% if page.url == '/categories.html' %} class="current" {% endif %}
+                >  CATEGORIES  
+        </a></li>
+        <li><a  href="{{site.baseurl}}/projects.html" 
+                {% if page.url == '/projects.html' %} class="current" {% endif %}
+                >  PROJECTS  
+        </a></li>
    </ul>
 </nav>

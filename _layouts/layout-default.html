@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Senior Geek</title>
-    <link href="{{site.baseurl}}/css/ccc-common.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/css-common.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Senior Geek - Today's Tech for Seniors</h1>
-        {% include nav.html navclass='nav-top' %}
+        {% include inc-nav.html navclass='nav-top' %}
     </header>
 
     {{content}}
 
     <footer>
-        {% include nav.html navclass='nav-bottom' %}
+        {% include inc-nav.html navclass='nav-bottom' %}
         <p> APM 2017</p>
     </footer>
 </body>

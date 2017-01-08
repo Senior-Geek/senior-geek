@@ -6,11 +6,16 @@ layout: layout-default
 
 <nav>
     <ul>
-        <li><a href="{{site.baseurl}}/astronomy.html">Astronomy</a></li>
-        <li><a href="{{site.baseurl}}/computer.html">Computer Technology</a></li>
-        <li><a href="{{site.baseurl}}/electronics.html">Electronics</a></li>
-        <li><a href="{{site.baseurl}}/ham.html">Amateur Radio</a></li>
-        <li><a href="{{site.baseurl}}/photography.html">Photography</a></li>
+        <li><a href="{{site.baseurl}}/category/cat-astronomy.html"
+            {% if page.url contains 'astronomy' %} class="current" {% endif %}>Astronomy</a></li>
+        <li><a href="{{site.baseurl}}/category/cat-computer.html"
+            {% if page.url contains 'computer' %} class="current" {% endif %}>Computer Technology</a></li>
+        <li><a href="{{site.baseurl}}/category/cat-electronics.html"
+            {% if page.url contains 'electronics' %} class="current" {% endif %}>Electronics</a></li>
+        <li><a href="{{site.baseurl}}/category/cat-ham.html"
+            {% if page.url contains 'ham' %} class="current" {% endif %}>Amateur Radio</a></li>
+        <li><a href="{{site.baseurl}}/category/cat-photography.html"
+            {% if page.url contains 'photography' %} class="current" {% endif %}>Photography</a></li>
     </ul>
 </nav>
 

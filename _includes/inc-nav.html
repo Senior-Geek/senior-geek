@@ -8,8 +8,8 @@
                 {% if page.url == '/blog.html' %} class="current" {% endif %}
                 >  BLOG  
         </a></li>
-        <li><a  href="{{site.baseurl}}/categories.html" 
-                {% if page.url == '/categories.html' %} class="current" {% endif %}
+        <li><a  href="{{site.baseurl}}/category/" 
+                {% if page.url contains 'cat-' or page.url contains 'category' %} class="current" {% endif %}
                 >  CATEGORIES  
         </a></li>
         <li><a  href="{{site.baseurl}}/projects.html" 

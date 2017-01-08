@@ -1,8 +1,8 @@
 ---
-layout: layout-default
+layout: layout-post
 title: My electronics test bench
 meta: My bench set-up for electronic testing, troubleshooting and building
-category: electronics
+category: cat-electronics
 project: home electronics workshop
 ---
 

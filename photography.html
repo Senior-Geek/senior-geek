@@ -1,14 +1,14 @@
 ---
-layout: default
+layout: cat
 ---
 
-<h1>BLOG</h1>
-<p>My blogs in reverse date order</p>
+<h1>Photography Topics</h1>
+
 <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories.photography %}
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <p>{{post.meta}}</p>
     </li>
-    {% endfor %}
+    {% endfor%}
 </ul>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: layout-default
 title: Sony RX-100-V
 meta: My new camera - unboxing and configuration
 category: photography

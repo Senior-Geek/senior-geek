@@ -1,15 +1,11 @@
 
 <nav class="nav-side" >
     <ul>
-        <li><a href="{{site.baseurl}}/category/cat-astronomy/"
-            {% if page.url contains 'astronomy' %}class="active"{% endif %}>Astronomy</a></li>
-        <li><a href="{{site.baseurl}}/category/cat-computer/"
-            {% if page.url contains 'computer' %}class="active"{% endif %}>Computer Technology</a></li>
-        <li><a href="{{site.baseurl}}/category/cat-electronics/"
-            {% if page.url contains 'electronics' %}class="active"{% endif %}>Electronics</a></li>
-        <li><a href="{{site.baseurl}}/category/cat-ham/"
-            {% if page.url contains 'ham' %}class="active"{% endif %}>Amateur Radio</a></li>
-        <li><a href="{{site.baseurl}}/category/cat-photography/"
-            {% if page.url contains 'photography' %}class="active"{% endif %}>Photography</a></li>
+        <h3>Category List:</h3>
+        {% for entry in site.data.data-cat %}
+            <li><a href="{{site.baseurl}}/category/cat-{{entry.cat}}/"
+                {% if page.url contains '{{entry.cat}}' %}class="active"{% endif %}>{{entry.cat-name}}
+            </a></li>
+        {% endfor %}
     </ul>
 </nav>

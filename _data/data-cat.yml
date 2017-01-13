@@ -1,0 +1,14 @@
+- cat: "astronomy"
+  cat-name: "Astronomy"
+
+- cat: "computer"
+  cat-name: "Computer Technology"
+
+- cat: "electronics"
+  cat-name: "Electronics"
+
+- cat: "ham"
+  cat-name: "Amateur (aka HAM) Radio"
+
+- cat: "photography"
+  cat-name: "Photography"

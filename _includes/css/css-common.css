@@ -3,3 +3,38 @@ html {
     padding: 0;
     font: normal 100%/1.4 Georgia,serif;
 }
+
+.container {
+    position: relative;
+}
+
+section {
+    top: 0 ;
+    margin-left: 220px;
+    padding: 1em;
+}
+
+.two-column {
+  /* padding: 1em; */
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  column-fill: auto;
+}
+
+footer {
+    position: fixed;
+    padding: 1em;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+}
+
+body {
+    margin-bottom: 120px;
+}

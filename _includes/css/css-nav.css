@@ -1,28 +1,52 @@
 
-.current{
-    background-color: #42aaf4;
-    color: #fff;
+.nav {
+    margin: 0 ;
+    padding: 0 ;
 }
 
-.nav {
-    margin: 5px ;
-    padding: 5px ;
-    list-style-type: none;
+.nav a{
+    text-decoration: none;
 }
 
 .nav > li {
     display: inline-block;
 }
 
+.active{
+    background-color: #33cc33;
+    color: #fff;
+}
+
 .nav-top {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 1.25rem;
+}
+
+.nav-top a{
+    color: #fff;
+}
+
+.nav-top a.active {
+    color: blue;
+}
+
+.nav-top a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .nav-bottom {
     font-size: 0.75rem;
 }
+
+.nav-side {
+    left: 0;
+    width: 220px;
+    background-color: #f1f1f1;
+    float: left;
+    overflow: auto;
+}
+.nav-side a{
+    text-decoration: none;
+}
+
+

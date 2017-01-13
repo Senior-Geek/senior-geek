@@ -1,3 +1,7 @@
-markdown: redcarpet
+markdown: kramdown
 baseurl: /senior-geek
 exclude: [README.md]
+permalink: pretty
+
+
+

@@ -37,16 +37,3 @@
 .nav-bottom {
     font-size: 0.75rem;
 }
-
-.nav-side {
-    left: 0;
-    width: 220px;
-    background-color: #f1f1f1;
-    float: left;
-    overflow: auto;
-}
-.nav-side a{
-    text-decoration: none;
-}
-
-

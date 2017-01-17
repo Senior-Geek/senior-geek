@@ -1,0 +1,53 @@
+---
+layout: layout-default
+---
+
+<!-- ------------------------------ select category of posts ------------------- -->
+<nav>
+    <ul id="left-panel" class="sidenav">
+        <li><a class="sel-cat" href="#allposts"><strong>All posts<strong></a></li>
+            {% for category in site.categories %}
+        <li><a class="sel-cat" href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a></li>
+            {% if forloop.last %}{% else %}{% endif %}
+            {% endfor %}
+    </ul>
+</nav>
+
+<!-- ------------------------------ display all posts --------------------------- -->
+<div class="catbloc post-list" id="allposts">
+    <h2>ALL POSTS</h2>
+    <ul class="post-container">
+        {% for post in site.posts %}
+            <li>
+                <a class="post-excerpt" href="{{ post.url }}">
+                    <time class="post-date">{{ post.date | date: "%-d %B %Y" }}</time>
+                    {{ post.excerpt }}
+                </a>
+                <a class="post-footer" href="{{ post.url | prepend: site.baseurl }}">Read more ...</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- ------------------------------ display posts for selected category ------------------- -->
+{% for category in site.categories %}
+    <div class="catbloc post-list" id="{{ category | first | remove:' ' }}">
+        <h2>{{ category | first }}</h2>       
+        <ul class="post-container">
+            {% for posts in category %}
+                {% for post in posts %}
+                    {% if post.url %}
+                        <li>
+                            <a class="post-excerpt" href="{{ post.url }}">
+                                <time class="post-date">{{ post.date | date: "%-d %B %Y" }}</time>
+                                {{ post.excerpt }}
+                            </a>
+                            <a class="post-footer" href="{{ post.url | prepend: site.baseurl }}">Read more ...</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+

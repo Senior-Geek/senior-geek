@@ -1,4 +1,7 @@
-markdown: kramdown
+markdown:    kramdown
+kramdown:  
+  parse_block_html: true
+highlighter: pygments
 baseurl: /senior-geek
 exclude: [README.md]
 permalink: pretty

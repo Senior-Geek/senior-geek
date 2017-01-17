@@ -1,0 +1,181 @@
+html {
+    margin: 0;
+    padding: 0;
+    font: normal 100%/1.4 Georgia,serif;
+    color: #363a7c;
+}
+
+/* -------------------- basic elements -------------------- */
+body {
+    margin-bottom: 120px;
+}
+
+div {
+    top: 0px ;
+    margin-left: 10px;
+    padding: 1em;
+}
+
+section {
+    top: 5px ;
+    margin-left: 25px;
+    padding: 1em;
+}
+
+footer {
+    position: fixed;
+    padding: 1em;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+}
+
+a {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+p {
+    margin: 10px 0px 15px 0px ;
+    padding: 0 ;
+}
+
+h1 {
+    margin: 5px 5px 5px 10px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+h2 {
+    margin: 0px 5px 0px 5px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+ul{
+    margin: 0px ;
+    padding: 10px 5px 10px 5px ;
+    list-style-type: disc;
+}
+
+ol{
+    margin: 0px ;
+    padding: 10px 5px 10px 5px ;
+    list-style-type: decimal; 
+}
+
+li {
+    margin: 0px ;
+    padding: 5px ;
+    display: list-item;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* -------------------- common containers -------------------- */
+.container {
+    position: relative;
+}
+
+#left-panel {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #eaecef;
+}
+
+/* -------------------- posts -------------------- */
+
+/* --------------------------- display only selected posts */
+.catbloc:not(:target) {
+    display: none;
+}
+
+.post-container {
+    position: relative;
+    margin: 10px 0 10px 0;
+    padding: 0px 5px 15px 5px;
+    display: block;
+}
+
+.post-container h2 {
+    margin: 0px 5px 0px 0px;
+}
+
+.post-container li {
+    margin: 10px 0 10px 0;
+    padding: 5px 5px 15px 5px;
+    background-color: #eaecef;
+    display: block;
+    border-bottom: 4px solid #363a7c;
+}
+
+.post {
+    margin-left: 20px;
+    padding: 0;
+    padding: 1em;
+}
+
+.post a:link {
+    color: blue;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+.post a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.post li {
+    margin-left: 25px;
+}
+
+.post-list {
+    margin-left: 200px;
+    padding: 1em;
+}
+
+.post-title {
+    margin: 0px 5px 0px 0px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 160%;
+}
+
+.post-date {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.post-excerpt {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.post-body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.post-footer {
+    margin: 0px 5px 10px 25px;
+    padding-bottom: 0;
+    font-weight: normal;
+    font-size: 80%;
+    color: blue;
+}
+
+

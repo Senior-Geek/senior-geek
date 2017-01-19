@@ -1,0 +1,14 @@
+<!-- ------------------------------ display posts for selected category ------------------- -->
+
+{% for category in site.categories %}
+    <div class="catbloc center-panel col-8" id="{{ category | first | remove:' ' }}">
+        <h2>{{ category | first }}</h2>          
+        {% for posts in category %}
+            {% for post in posts %}
+                {% if post.url %}
+                    {% include inc-post-excerpts.html %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endfor %}

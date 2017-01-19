@@ -1,0 +1,97 @@
+
+/* -------------------- MAIN BLOCKS -------------------- */
+.container {
+    position: relative;
+}
+
+#left-panel {
+    margin: 5px;
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #eaecef;
+}
+
+.center-panel {
+    padding: 1em;
+    height: 100%;
+}
+
+.bottom-panel {
+    position: relative;
+    margin-left: 0px;
+    width: 1320px;
+    padding: 1em;
+}
+
+/* -------------------- POSTS -------------------- */
+
+/* --------------------------- BLOCK - post excerpt list */
+.post-excerpt-container {
+    position: relative;
+    margin: 10px 0 10px 0;
+    padding: 0px 5px 15px 5px;
+    display: block;
+}
+
+.post-excerpt-container h2 {
+    margin: 0px 5px 0px 0px;
+}
+
+.post-excerpt-container li {
+    margin: 10px 0 10px 0;
+    padding: 5px 5px 15px 5px;
+    background-color: #eaecef;
+    display: block;
+    border-bottom: 4px solid #363a7c;
+}
+
+/* --------------------------- ELEMENT - post excerpt narrative */
+.post-excerpt {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.post-excerpt-footer {
+    margin: 0px 5px 10px 25px;
+    padding-bottom: 0;
+    font-weight: normal;
+    font-size: 80%;
+    color: blue;
+}
+
+.post-date {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+/* --------------------------- MODIFIER - display only selected posts */
+.catbloc:not(:target) {
+    display: none;
+}
+
+/* --------------------------- BLOCK - single post */
+.post {
+    margin-left: 20px;
+    padding: 0;
+    padding: 1em;
+}
+
+.post a:link {
+    color: blue;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+.post a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.post li {
+    margin-left: 25px;
+}

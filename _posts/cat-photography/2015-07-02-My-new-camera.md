@@ -2,7 +2,9 @@
 layout: layout-post
 title: Sony RX-100-V
 meta: My new camera - unboxing and configuration
-category: Photography
+category: 
+    - All
+    - Photography
 ---
 
 ## Sony RX-100-V

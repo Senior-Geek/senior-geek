@@ -2,7 +2,9 @@
 layout: layout-post
 title: My electronics test bench
 meta: My bench set-up for electronic testing, troubleshooting and building
-category: Electronics
+category: 
+    - All
+    - Electronics
 project: home electronics workshop
 ---
 

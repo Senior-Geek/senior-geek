@@ -1,0 +1,9 @@
+<ul class="post-excerpt-container">
+    <li>
+        <a class="post-excerpt" href="{{ post.url }}">
+           <time class="post-date">{{ post.date | date: "%-d %B %Y" }}</time>
+                 {{ post.excerpt }}
+        </a>
+        <a class="post-excerpt-footer" href="{{ post.url | prepend: site.baseurl }}">Read more ...</a>
+    </li>
+</ul>
